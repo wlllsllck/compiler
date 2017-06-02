@@ -1,0 +1,1 @@
+ในบางกรณี หาก RIG สามารถทำการ colouring ด้วย 3 สีได้ แต่เนื่องจากทุก node ใน RIG มี neighbor อย่างน้อย 3 ตัวทุก node ทำให้หากทำ graph colouring จาก algorithm ของ chaitin จะต้องใช้สีหรือค่า k อย่างต่ำที่ 4 ซึ่งผลที่ได้จะไม่ optimal

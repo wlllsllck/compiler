@@ -1,0 +1,9 @@
+instr 0: nop
+instr 1: func main
+instr 2: enter
+instr 3: long
+instr 4: var i
+instr 5: enddec
+instr 6: MUL i 2
+instr 7: copyto i (6)
+instr 8: end

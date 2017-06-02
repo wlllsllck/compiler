@@ -1,0 +1,17 @@
+digraph finite_state_machine {
+	rankdir=LR;
+	size="8,5" 
+	node [shape = doublecircle]; q1q4 q2q4, q2q3q4q5q6 
+	node [shape = circle];
+	q1q4 -> q3q5 [ label = "1" ];
+	q1q4 -> q2q4 [ label = "0" ];
+	q2q4 -> q3q5 [ label = "1" ];
+	q2q4 -> Trash [ label = "0" ];
+	Trash -> Trash [ label = "0,1" ];
+	q3q5 -> q3 [ label = "1" ];
+	q3q5 -> q2q3q4q5q6 [ label = "0" ];
+	q3 -> q3 [ label = "1" ];
+	q3 -> q3q5 [ label = "0" ];
+	q2q3q4q5q6 -> q3q5 [ label = "1" ];
+	q2q3q4q5q6 -> q2q3q4q5q6 [label = "0" ];
+}

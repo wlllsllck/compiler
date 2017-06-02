@@ -1,0 +1,20 @@
+digraph finite_state_machine {
+	rankdir=LR;
+	size="8,5" 
+	node [shape = doublecircle]; 12345789 9
+	node [shape = circle];
+	1234 -> 123457 [ label = "a" ];
+	1234 -> 67 [ label = "b" ];
+	123457 -> 1234578 [ label = "a" ];
+	123457 -> 67 [ label = "b" ];
+	67 -> 8 [ label = "a" ];
+	67 -> Trash [ label = "b" ];
+	8 -> 9 [ label = "a" ];
+	8 -> Trash [ label = "b" ];
+	9 -> Trash [ label = "a,b" ];
+	Trash -> Trash [ label = "a,b" ];
+	1234578 -> 12345789 [ label = "a" ];
+	1234578 -> 67 [ label = "b" ];
+	12345789 -> 12345789 [ label = "a" ];
+	12345789 -> 67 [ label = "b" ];
+}
